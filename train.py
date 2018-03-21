@@ -10,6 +10,10 @@ dataset = data_loader.load_data()
 dataset_size = len(data_loader)
 print('#training images = %d' % dataset_size)
 
+print(dataset)
+print(len(dataset))
+print("GOGOGOGOGO")
+
 model = create_model(opt)
 visualizer = Visualizer(opt)
 total_steps = 0

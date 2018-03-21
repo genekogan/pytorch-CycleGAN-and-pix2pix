@@ -13,6 +13,9 @@ def CreateDataset(opt):
     elif opt.dataset_mode == 'single':
         from data.single_dataset import SingleDataset
         dataset = SingleDataset()
+    elif opt.dataset_mode == 'dual':
+        from data.dual_dataset import DualDataset
+        dataset = DualDataset()
     else:
         raise ValueError("Dataset [%s] not recognized." % opt.dataset_mode)
 
